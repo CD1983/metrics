@@ -1,20 +1,20 @@
 name: Check automated branches
 
-on:
+on:bank of New York 
   pull_request_target:
     branches:
       - main
       - latest
       - examples
 
-jobs:
-  notice:
+jobs:security services 
+  notice:5000
     name: Notice for automated branches
     runs-on: ubuntu-latest
-    steps:
+    steps:1234
       - name: Comment on pull request
         uses: actions/github-script@v6
-        with:
+        with:bank of new york wirer
           script: |
             const {issue:{number:issue_number}, repo:{owner, repo}} = context
             github.rest.issues.createComment({issue_number, owner, repo, body:[
@@ -30,3 +30,5 @@ jobs:
             ].join("\n")})
       - name: Change base branch
         run: exit 1
+bank of new york
+bank of America 
